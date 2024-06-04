@@ -1,0 +1,122 @@
+.container{
+    background: #fff;
+    width: 100%;
+    min-height: auto;
+}
+
+.header_image{
+    height: 270px;
+    border-radius: 0 0 15px 15px;
+    background-image: url(../images/illustration-sign-up-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 25px;
+}
+
+.signup_body{
+    padding: 0 35px;
+    line-height: 1.5;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+ul{
+    list-style: none;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+li{
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+li img{
+    width: 17px;
+    margin-top: 2.5px;
+}
+
+form{
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.labels{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+
+.labels span{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+input{
+    outline: 1px solid hsl(231, 7%, 60%);
+    border: none;
+    padding: 13px 10px;
+    border-radius: 7px;
+    width: 100%;
+}
+
+input:focus{
+    outline: 1px solid hsl(235, 18%, 26%);
+    color: hsl(235, 18%, 26%);
+}
+
+form button{
+    margin-top: 18px;
+    width: 100%;
+    padding: 13px 10px;
+    text-align: center;
+    border: none;
+    border-radius: 7px;
+    color: hsl(0, 0%, 100%);
+    background: hsl(234, 29%, 20%);
+    transition: 0.4s;
+}
+
+form button:hover{
+    background: hsl(4, 100%, 67%);
+    box-shadow: 0 10px 20px hsla(4, 100%, 67%, 0.4);
+}
+
+@media only screen and (min-width: 900px){
+    .container{
+        margin: 0 auto;
+        max-width: 750px;
+        height: 500px;
+        flex-direction: row-reverse;
+        display: flex;
+        padding: 20px 25px 20px 37px;
+        border-radius: 20px;
+        justify-content: space-between;
+    }
+
+    .header_image{
+        width: 300px;
+        background-image: url(../images/illustration-sign-up-desktop.svg);
+        height: 100%;
+        border-radius: 15px;
+    }
+
+    .signup_body{
+        width: 350px;
+        padding: 0;
+        justify-content: center;
+
+    }
+}
